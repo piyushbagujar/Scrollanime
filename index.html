@@ -69,13 +69,13 @@
                     trigger: ".parent",
                     start: "top top",
                     end: "bottom bottom",
-                    scrub: 1,  // Controls the synchronization with the scrollbar.
-                    markers: true
+                    scrub: 1, 
+                   
                 }
             })
             .to(frames, {
                 currentIndex: frames.maxIndex,
-                ease: "none",  // Disables easing to ensure the animation progresses linearly with scrolling.
+                ease: "none",  
                 onUpdate: function () {
                     LoadImage(Math.floor(frames.currentIndex));
                 }
